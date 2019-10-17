@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>崔凡的简单网页应用</title>
+    <script>
+        var password = prompt('请输入qq密码') 
+            
+           if(password == '456789') {
+            alert('密码输入正确')     
+        } else {
+            alert(' 密码输入错误！')
+        }
+        while(password == '456789'|| password == null){
+            password = prompt('请重新输入密码');
+        }   
+        function color(str) {
+            document.body.style.backgroundColor = str;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="设为红色" onclick="color('red')">
+    <input type="button" value="设为绿色" onclick="color('green')">    
+    <input type="button" value="设为黄色" onclick="color('yellow')">
+    <input type="button" value="设为自定义颜色" onclick="color('pink')">
+</body>
+</html>
