@@ -1,5 +1,5 @@
 
-function calcullate(){
+function calculate(){
     let num = document.getElementById('num').value
     num = parseInt(num)&&Number(num)
     if (!isNaN(num)) {
@@ -29,7 +29,7 @@ function pi(num){
     }
     return sum * 2
 }
-calcullate()
+calculate()
 
 
 
