@@ -2,14 +2,14 @@
 function calcullate(){
     let num = document.getElementById('num').value
     num = parseInt(num)&&Number(num)
-    if(!isNaN(num)){
-        document.getElementById('pai').value = pi('num')
+    if (!isNaN(num)) {
+        document.getElementById('pai').value = pi(num)
     }
 }
 function factorial(n){
     let sum = 1
     for(let i=1;i <= n; ++i){
-        sum*=i
+        sum *=i
     }
     return sum
 }
@@ -27,9 +27,6 @@ function pi(num){
         let divisor = oddFactorial(i)
         sum +=dividend / divisor
     }
-    console.log(dividend);
-    console.log(divisor);
-    console.log(sum);
     return sum * 2
 }
 calcullate()
