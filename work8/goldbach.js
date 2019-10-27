@@ -5,8 +5,10 @@ function goldbach() {
       let goldbach = document.getElementById('goldbach')   
         var arr =[]   
           var a = 0;    
-         for(var i=2;i<=value;i++){  a = 0   
-             for(var j=2;j<i;j++){ if(i%j==0){
+         for(var i=2;i<=value;i++){  
+           a = 0   
+             for(var j=2;j<i;j++){ 
+               if(i%j==0){
                   a++
             }        
         }     
