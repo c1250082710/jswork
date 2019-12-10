@@ -74,7 +74,7 @@ Cart.prototype = {
 
     del: function(item) {
         for (let i in this.items) {
-            if (tjis.items[i] === item) {
+            if (this.items[i] === item) {
                 delete this.items[i];
             }
         }
