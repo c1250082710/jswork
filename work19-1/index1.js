@@ -19,7 +19,7 @@ document.getElementById('upload').onclick = function () {
             if (name == '') {
                 throw new Error('服务器保存文件失败。');
             }
-            down.innerHTML = '文件上传成功。<a herf=${name}>下载文件${name}</a> ';
+            down.innerHTML = `文件上传成功。<a herf=${name}>下载文件${name}</a>`;
         }
     };
     xhr.open('POST', '/upload');
